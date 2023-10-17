@@ -1,0 +1,93 @@
+.music-album-shopping-page {
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+
+h1 {
+  font-family: "Old English Text MT", serif;
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.album-container,
+.merch-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.album-card,
+.merch-card {
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px);
+  height: 300px;
+  max-width: 400px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+.album-image,
+.merch-image {
+  width: 100%;
+  max-height: 70%;
+  object-fit: cover;
+}
+
+.album-info,
+.merch-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.album-title,
+.merch-title {
+  font-weight: bold;
+}
+
+.album-price,
+.merch-price {
+  font-weight: bold;
+}
+
+.album-button,
+.merch-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.album-button:hover,
+.merch-button:hover {
+  background-color: #0056b3;
+}
+
+.see-cart button {
+    border: none;
+    border-radius: 20px; /* Adjust the border-radius as needed */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .see-cart button:hover {
+    background-color: #0056b3;
+  }
+  
