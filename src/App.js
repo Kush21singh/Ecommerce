@@ -1,16 +1,36 @@
-import React from 'react';
-import Header from './Header';
-import MusicAlbumShoppingPage from './MusicAlbumShoppingPage';
-import Footer from './Footer';
-import'./App.css';
+import React, {useState} from 'react'
+import Headers from './Component/Layout/Headers'
+import Cart from './Component/Cart/Cart'
+import Product from './Component/Product/Product'
+import Footer from './Component/Footer/Footer'
+import CartProvider from './Component/Store/CardProvider'
+import { Routes, Route } from 'react-router-dom';
+import About from './About/About'
+
 function App() {
- return (
-    <div className="App">
-      <Header />
-      <MusicAlbumShoppingPage />
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
+  return (
+    <CartProvider>
+      <Headers onShowCart={showCartHandler} />
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+
+      <Routes>
+        <Route path="Product" element={<Product />} />
+        <Route path='about' element={<About/>}/>
+      </Routes>
+
       <Footer />
-    </div>
- );
+    </CartProvider>
+  );
 }
 
-export default App;
+export default App
