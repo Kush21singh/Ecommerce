@@ -1,0 +1,63 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    background-color: #777;
+    align-items: center;
+    color: white;
+}
+.headerhome{
+    padding: 40px;
+    font-size: 100px;
+}
+.home_latestpage{
+    display: block;
+    border: 1px solid #56CCF2;
+    padding: 15px 30px;
+    font-size: 23px;
+    font-weight: 200;
+    margin: 10px auto;
+    background: inherit;
+    cursor: pointer;
+    color: white;
+}
+.plybtn{
+    cursor: pointer;
+    display: block;
+    border: 2px solid #56CCF2;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 20px auto;
+    background: inherit;
+    color: #56CCF2;
+}
+.tour{
+    text-align: center;
+    padding: 10px;
+}
+.main-containers{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 1px solid red;
+    padding: 7px;
+    margin-bottom: 8px;
+}
+.buy{
+    width: 20%;
+    background: #56CCF2;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+text-align: center;
+margin-bottom: 8px;
+font-size: 18px;
+}
