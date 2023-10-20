@@ -1,0 +1,59 @@
+.mainContent{
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: space-around;
+   
+    
+}
+
+.Content{
+    /* border: 1px solid blue; */
+    width: 38%;
+    margin-bottom: 2rem;
+}
+.AddCart{
+    display: flex;
+    padding: 7px;
+    justify-content: space-between;
+}
+.btn1{
+    cursor: pointer;
+    padding: 8px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4%;
+    background: #56CCF2;
+}
+span{
+    padding: 8px;
+}
+
+.btn4{
+   
+    display: flex;
+    padding: 15px;
+    background-color: #777;
+    border: none;
+    border-radius: 7px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 18px;
+    color: #56CCF2;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 1170px) {
+    .mainContent{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
