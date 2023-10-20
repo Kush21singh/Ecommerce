@@ -1,0 +1,37 @@
+.footer{
+    background-color: #0eabdf;
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   height: 15vh;
+   
+
+ 
+}
+.footerChild{
+    
+   display: flex;
+  
+    color: white;
+    /* border: 2px solid blue; */
+
+
+    }
+    .footerChild1{
+        /* border: 1px solid red; */
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+  
+
+    }
+    .icon{
+        border: 1px solid white;
+
+      
+       
+        border-radius: 25%;
+    }
+   
